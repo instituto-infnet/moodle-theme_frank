@@ -1,5 +1,5 @@
 console.info('Course');
-// Controi as ancoras das etapas da disciplina
+// Controi as ancoras das etapas da disciplina (BOLOTRON)
 function stepsAnchor(stepsList, anchorNav) {
   var steps, nav, sectionsTitle, listLenght, lastSectionTitle, delay;
 
@@ -21,6 +21,7 @@ function stepsAnchor(stepsList, anchorNav) {
     } else {
       nav.innerHTML += '<li class="etapa"><a data-wow-delay="'+delay+'s" href="#section-'+ i +'"><span>'+ i +'</span></a></li>';
     };
+
     delay = (delay * 10 + 0.1 *10)/10;
   };
 }
@@ -65,8 +66,8 @@ require(['jquery'], function($) {
     $(window).scrollTop() > 100 ? $('.navbar').addClass('shadow') : $('.navbar').removeClass('shadow');
     $(window).scrollTop() > 450 ? $('.trail').addClass('side') : $('.trail').removeClass('side');
   });
-
 });
 
 rubricComp();
 codesHeader();
+

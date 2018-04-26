@@ -3025,21 +3025,20 @@ input[type="submit"].btn {
   }
 
   /* alert terceiros */
-  .pl-embed-video:hover .caption-terceiros {
+  .caption-terceiros:hover,
+  .pl-embed-video:hover + .caption-terceiros {
     opacity: 1;
   }
 
   .caption-terceiros {
-    position: absolute;
-    bottom: -25px;
+    margin-top:  -30px;
     font-family: 'Roboto', sans-serif;
     background: #2196F3;
-    height: 17px;
     color: rgba(255, 255, 255, .87);
     font-size: 11px;
-    padding: 4px;
+    padding: 8px;
     line-height: 16px;
-    width: calc(100% - 8px);
+    width: 100%;
     text-rendering: optimizeLegibility;
     transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
     opacity: 0;
@@ -3049,7 +3048,7 @@ input[type="submit"].btn {
   }
 
   .caption-terceiros a{
-    color: rgba(255, 255, 255, .87);
+    color: rgba(255, 255, 255, .87) !important;
     text-decoration: underline;
   }
 

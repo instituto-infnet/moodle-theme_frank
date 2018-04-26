@@ -1,7 +1,7 @@
 console.log('INITS!!');
 /* HIGHLIGHT */
 hljs.initHighlightingOnLoad();
-//hljs.initLineNumbersOnLoad();
+
 /* FLUIDBOX */
 require(['jquery'], function($) {
     $(".pl-ra img").addClass('pl-img-responsive').wrap(function() {
@@ -16,7 +16,7 @@ require(['jquery'], function($) {
       positionContent: false
     });
 
-    $('.pl-embed-video').append('<div class="caption-terceiros"><i class="fa fa-info-circle" aria-hidden="true"></i> Recursos de terceiros podem estar indisponívels ou "quebrados". Caso este recursos não esteja funcionando, entre em contato com a <a href="mailto:design.educacional@infnet.edu.br">equipe de DE</a></div>');
+    $('<div class="caption-terceiros"><i class="fa fa-info-circle" aria-hidden="true"></i> Recursos de terceiros podem estar indisponívels ou "quebrados". Caso este recursos não esteja funcionando, entre em contato com a <a href="mailto:design.educacional@infnet.edu.br">equipe de DE</a></div>').insertAfter('.pl-embed-video');
 });
 
 (function(){
