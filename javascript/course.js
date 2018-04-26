@@ -35,7 +35,6 @@ function codesHeader() {
     var groups = fullname.match(rgx);
 
     if (groups != null) {
-      console.log(groups);
       header[i].innerHTML = '<span class="page-header-course-code">'+ groups[1] +'</span><span class="page-header-period-code">'+ groups[3]+'</span><span class="disciplina-fullname">'+ groups[2] + '</span>';
     }
   }
