@@ -1,0 +1,101 @@
+<div class="well">
+	<h4>Competências avaliadas nesta disicplina:</h4>
+	{{#competencies}}
+		<p>{{idnumber}}. {{{description}}}</p>
+	{{/competencies}}
+</div>
+
+{{{img_toggledescription}}}
+
+<div class="reportparent" data-region="course-competencies-report">
+	<table class="table table-bordered">
+		<summary class="accesshide">
+			<p>{{#str}}tablesummary, report_coursecompetencies{{/str}}</p>
+		</summary>
+		<thead>
+			<tr>
+				<th scope="col">{{#str}}student, report_coursecompetencies{{/str}}</th>
+				{{#competencies}}
+				<th scope="col">
+					<div id="fnref:{{idnumber}}" class="competency-idnumber" >
+						<a href="#fn:{{idnumber}}" data-id="{{id}}">{{idnumber}}</a>
+					</div>
+				</th>
+				{{/competencies}}
+			</tr>
+		</thead>
+		<tbody>
+		{{#users}}
+			<tr>
+				<th scope="row">
+					{{{picture}}}<a href="{{{profileurl}}}">{{{fullname}}}</a>
+				</th>
+				{{#competencies}}
+				<td class="alert {{#grade}}alert-{{#proficiency}}success{{/proficiency}}{{^proficiency}}error{{/proficiency}}{{/grade}}">
+					<a
+						href="#"
+						title="{{#str}}usercompetencysummary, report_competency{{/str}}"
+						data-user-competency="true"
+						data-userid="{{userid}}"
+						data-competencyid="{{competencyid}}"
+						data-courseid="{{courseid}}"
+					>
+						{{#grade}}{{gradename}}{{/grade}}
+						{{^grade}}{{#str}}notrated, report_competency{{/str}}{{/grade}}
+					</a>
+				{{/competencies}}
+			</tr>
+		{{/users}}
+		</tbody>
+	</table>
+</div>
+
+<!-- comps -->
+<div class="footnotes">
+	<ol>
+		{{#competencies}}
+    <li class="footnote" id="fn:{{idnumber}}">
+    	<p data-id="{{id}}">
+    		<b>Competência:</b><br>
+      	{{idnumber}}. {{description}}
+      <p>
+    </li>
+    {{/competencies}}
+	</ol>
+</div>
+
+{{#js}}
+toggleDescription = function() {
+	var dataId = this.getAttribute('data-id');
+	var description = document.querySelector('.competency-description[data-id="' + this.getAttribute('data-id') + '"]');
+	var togglerImg = this.children[0];
+	var oldImg;
+	var newImg;
+
+	if (description.classList.contains('accesshide')) {
+		description.classList.remove('accesshide');
+		oldImg = 'collapsed';
+		newImg = 'expanded';
+	} else {
+		description.classList.add('accesshide');
+		oldImg = 'expanded';
+		newImg = 'collapsed';
+	}
+
+	togglerImg.setAttribute('src', togglerImg.getAttribute('src').replace(oldImg, newImg));
+};
+
+document.querySelectorAll('[data-action=competency-toggledescription]').forEach(function(toggler) {
+	toggler.onclick = toggleDescription;
+});
+
+require(['tool_lp/competencydialogue'], function(Compdialogue) {
+	Compdialogue.init();
+});
+require(['report_competency/grading_popup'], function(Popup) {
+	var gradingPopup = new Popup('[data-region=course-competencies-report]', '[data-user-competency=true]');
+	gradingPopup._refresh = function() {
+		return;
+	}
+});
+{{/js}}

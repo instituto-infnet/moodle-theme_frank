@@ -1,0 +1,113 @@
+/* Definicao de estilos somente para não admin do sistema*/
+
+.categoryname .classes_codes {  /* [GRLADS01C1-N2-L1] -  */
+  display: inline-block;
+  clear: both;
+  font-size: 14px;
+  line-height: 14px;
+  background: #ddd;
+  color: rgba(0,0,0,.87);
+  padding: 5px;
+  border-radius: 3px;
+  float: right;
+  margin-top: 7px;
+}
+
+.course_category_tree .classes_codes {
+  display: inline-block;
+  clear: both;
+  font-size: 14px;
+  line-height: 14px;
+  background: #ddd;
+  color: rgba(0,0,0,.87);
+  padding: 5px;
+  border-radius: 3px;
+  float: right;
+  margin-top: 7px;
+}
+
+.block_tree .classes_codes {
+  display: inline-block;
+  padding: 5px;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 3px;
+}
+
+.classes_codes.grp {
+  background: #00838F;
+  color: rgba(255, 255, 255, .87);
+}
+
+.classes_codes.grl {
+  background: #E91E63;
+  color: rgba(255, 255, 255, .87);
+}
+
+.classes_codes.gro {
+  background: #7C4DFF;
+  color: rgba(255, 255, 255, .87);
+}
+
+.classes_codes {
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+.course_category_tree .disciplina_codes {
+  padding: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  float: right;
+}
+
+.page-header-headings .disciplina_codes {
+  display: inline-block;
+  font-size: 32px;
+  padding: 0 8px;
+  margin-left: 8px;
+}
+
+.disciplina_codes { /*[17GRLADS01BFE101]*/
+  background: #D50000 !important;
+  color: rgba(255, 255, 255, .87) !important;
+  border-radius: 3px;
+  padding: 0 3px;
+}
+
+.course_category_tree .periodo_codes,
+.categoryname .periodo_codes,
+.block_course_overview .periodo_codes {
+  display: inline-block;
+  clear: both;
+  font-size: 14px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  background: #ddd;
+  color: rgba(0,0,0,.87);
+  padding: 5px;
+  border-radius: 3px;
+  float: right;
+}
+
+.categoryname .periodo_codes {
+  margin-top: 7px;
+}
+
+.page-header-headings .periodo_codes {
+  font-size: 32px;
+  display: inline-block;
+  padding: 0 8px;
+  margin-left: 0;
+}
+
+.periodo_codes { /*[16E3-16E4] [17E1_1]*/
+  background: #448AFF !important;
+  color: rgba(255, 255, 255, .87) !important;
+  border-radius: 3px;
+  padding: 0 3px;
+  margin-left: 8px;
+}
+
+.blocos_codes {}

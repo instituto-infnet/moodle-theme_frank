@@ -1,0 +1,37 @@
+/*
+	Nos dados resumidos, exibir apenas o máximo possível,
+	que é o valor considerado no fechamento
+*/
+body#page-mod-attendance-view table.attlist tr:not(:first-child):not(:nth-child(4)):not(:last-child):not(:nth-last-child(2)),
+/* Não exibir as colunas Tipo e Descrição, que não usamos */
+body#page-mod-attendance-view table.generaltable.attwidth.boxaligncenter tr th.c1,
+body#page-mod-attendance-view table.generaltable.attwidth.boxaligncenter tr td.c1,
+body#page-mod-attendance-view table.generaltable.attwidth.boxaligncenter tr th.c4,
+body#page-mod-attendance-view table.generaltable.attwidth.boxaligncenter tr td.c4 {
+	display: none;
+}
+
+/* Alinhar os dados totalizados à direita */
+body#page-mod-attendance-view table.attlist td.c0 {
+	width: 90%;
+}
+
+/* Não alinhar os botões de filtro à direita */
+body#page-mod-attendance-view .attfiltercontrols td.lastcol {
+	text-align: inherit !important;
+}
+
+/* Não destacar linhas de valores totais */
+body#page-mod-attendance-view table.attlist tr.highlight {
+	background: inherit;
+}
+
+/* Destacar última linha */
+body#page-mod-attendance-view table.attlist tr:last-child {
+	background: #d9edf7;
+}
+
+/* Afastar tabela dos botões de filtro, para destaque não sobrepor */
+body#page-mod-attendance-view table.attlist {
+	margin-bottom: 10px;
+}

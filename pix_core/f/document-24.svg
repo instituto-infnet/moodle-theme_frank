@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="152.885px" height="200.661px" viewBox="0 0 152.885 200.661" enable-background="new 0 0 152.885 200.661"
+	 xml:space="preserve">
+<g transform="translate(64,14)">
+	
+		<radialGradient id="SVGID_1_" cx="156.0142" cy="1064.5068" r="205.6824" gradientTransform="matrix(1.1019 0 0 1.1019 -234.4208 -1185.88)" gradientUnits="userSpaceOnUse">
+		<stop  offset="0" style="stop-color:#4387FD"/>
+		<stop  offset="0.65" style="stop-color:#3078F0"/>
+		<stop  offset="0.9099" style="stop-color:#2B72EA"/>
+		<stop  offset="1" style="stop-color:#286EE6"/>
+	</radialGradient>
+	<path fill="url(#SVGID_1_)" d="M88.885,43.332H31.554V-14h-81.687C-57.062-14-64-7.062-64-0.133v172.938
+		c0,6.915,6.938,13.856,13.867,13.856H75.019c6.924,0,13.866-6.941,13.866-13.856V43.332z"/>
+	<g opacity="0.9">
+		<rect x="-35.333" y="71.998" fill="#FFFFFF" width="95.554" height="9.556"/>
+		<rect x="-35.333" y="91.108" fill="#FFFFFF" width="95.554" height="9.556"/>
+		<rect x="-35.333" y="110.219" fill="#FFFFFF" width="95.554" height="9.555"/>
+		<rect x="-35.333" y="129.33" fill="#FFFFFF" width="57.332" height="9.556"/>
+	</g>
+	<polygon fill="#2658AB" points="31.554,43.332 88.885,43.332 88.885,83.004 	"/>
+	<polygon fill="#A0C3FF" points="88.885,43.332 31.554,43.332 31.554,-14 	"/>
+</g>
+</svg>
