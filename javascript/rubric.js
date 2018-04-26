@@ -10,7 +10,7 @@ function rubricRequired() {
   }
 }
 
-// Aplica estilo para as subcompetencias dos itens de rubrica
+// Aplica estilo para as Competencias dos itens de rubrica
 function rubricComp() {
   var itens = document.querySelectorAll(".description");
   var i;
@@ -20,7 +20,7 @@ function rubricComp() {
   }
 }
 
-// Aplica estilo para as subcompetencias dos itens de rubrica
+// Aplica o label de TPs nas rubricas de projetos
 function rubricTp() {
   var itens = document.querySelectorAll(".description");
   var i;
